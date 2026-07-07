@@ -14,9 +14,12 @@
 ### Scripts
 - After you install all dependencies, you should be ready to run the following scripts:
     - [Main Master Script: Run_RR_Correction_Pipeline.sh](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#master-script-run_rr_correction_pipelinesh)
-	- [Subscript 1: ACPC Alignment Script: `SUIT_Prep.sh`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#suit_prepsh--acpc-alignment-script)
-	- [Subscript 2: Fix-Cerebellum_SUIT Matlab Function: `Fix_Cerebellum_SUIT.m`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#fix_cerebellum_suitm-function)
-	- [Subscript 3: Mask Dilation Script: `binary_dilation.py`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#iiid--targeted-dilation-using-suit-subregions)
+	- [Subscript 1: ACPC Alignment Script: `SUIT_Prep.sh`](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#suit_prepsh--acpc-alignment-script
+)
+	- [Subscript 2: Fix-Cerebellum_SUIT Matlab Function: `Fix_Cerebellum_SUIT.m`](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#fix_cerebellum_suitm-function
+)
+	- [Subscript 3: Mask Dilation Script: `binary_dilation.py`](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#iiid--targeted-dilation-using-suit-subregions
+)
 	- [Optional - Coregistration of Corrected-Mask to PET Space: `Coreg_Corrected_RR_to_PET.sh`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#fix_cerebellum_suitm-block-iv-coreg-of-corrected-mask-to-pet-space)
 
 ***
@@ -255,7 +258,7 @@ function Fix_Cerebellum_SUIT(Repo_path, spm12_path, antspath, fslpath, pyExe, su
     mask_file = fullfile(suitDerivativesPath, sprintf('c_%s_N4_ACPC_pcereb.nii', subject)); % T1 space mask -> output of seg step
     mat_file = fullfile(suitDerivativesPath, sprintf('mc_%s_N4_ACPC_snc.mat', subject)); % Deformation field -> output of normalization step
 ```
-![](https://gist.github.com/user-attachments/assets/2a936d5c-4bc3-4b0e-bd00-a86b1395f5ca)
+![](https://github.com/user-attachments/assets/07ecf5a4-cc4f-4c28-b068-5b2317a7e068)
 
 ***
 
@@ -316,7 +319,7 @@ function Fix_Cerebellum_SUIT(Repo_path, spm12_path, antspath, fslpath, pyExe, su
 	end
 	
 ```
-![](https://gist.github.com/user-attachments/assets/342527ab-a1ce-4827-8ff1-11434306708d)
+![](https://github.com/user-attachments/assets/0581ee95-ada4-4400-9435-241131b35a7d)
 
 ***
 
@@ -411,7 +414,7 @@ function Fix_Cerebellum_SUIT(Repo_path, spm12_path, antspath, fslpath, pyExe, su
 	end
 ```
 
-![](https://gist.github.com/user-attachments/assets/0d2d0169-fa13-41f5-a114-ed19bcab36b3)
+![](https://github.com/user-attachments/assets/491f223f-824c-469b-87e9-e7dc83fa50b5)
 
 ***
 
@@ -537,7 +540,7 @@ for subject in args.subj:
         print(f"Skipping {subject}, output already exists.")
 ```
 
-![](https://gist.github.com/user-attachments/assets/33d96c76-88cb-47ae-b35b-2649429e3c3e)
+![](https://github.com/user-attachments/assets/732cf8e4-8321-4034-ae6b-d503bcfa7b0f)
 
 ***
 
@@ -664,7 +667,7 @@ fi
 ``` 
 - On registering the corrected mask to PET space, you should be able to overlay the pre/post-correction masks and visualize the difference.
 
-![](https://gist.github.com/user-attachments/assets/62b9ce49-ae21-4d48-89ea-43133e373fbc)
+![](https://github.com/user-attachments/assets/27b09dbc-a798-4645-8ce7-314db2432b1e)
 	
 
 ***
