@@ -3,9 +3,7 @@ function Fix_Cerebellum_SUIT(Repo_path, spm12_path, antspath, fslpath, pyExe, su
 % Wriiten by SG - 04/16/2025
 %__________________________________________________________________________
 %
-%  Inputs: ${subject_id}_N4_ACPC.nii (T1) 
-%
-%  Main outputs: Corrected RR mask
+%  Main outputs: Corrected RR mask here ${subject_id}/SUIT_Main_Outputs
 %  Processing log located here: ${subject_id}/SUIT_Derivatives/Processing_Logs_SUIT
 %__________________________________________________________________________
 %
