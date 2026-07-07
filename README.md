@@ -16,6 +16,6 @@
 
 ![](https://github.com/user-attachments/assets/5cb8c03a-8718-48f2-8b84-9ea2738ab789)
 
-Cite as: Ganesan S., Lee N, Hand M, Tennant V, Braskie MN. HABS-HD Reference Region Rescue Pipeline - [18F] Florbetaben (FBB) Amyloid PET for HABS-HD. Revised 4/08/26. Accessible via the Laboratory of Neuro Imaging (LONI) Imaging Data Archive: https://ida.loni.usc.edu
+***Cite as***: Ganesan S., Lee N, Hand M, Tennant V, Braskie MN. HABS-HD Reference Region Rescue Pipeline - [18F] Florbetaben (FBB) Amyloid PET for HABS-HD. Revised 4/08/26. Accessible via the Laboratory of Neuro Imaging (LONI) Imaging Data Archive: https://ida.loni.usc.edu
 
 ***
