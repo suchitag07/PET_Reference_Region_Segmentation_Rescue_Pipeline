@@ -20,7 +20,7 @@
 )
 	- [Subscript 3: Mask Dilation Script: `binary_dilation.py`](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#iiid--targeted-dilation-using-suit-subregions
 )
-	- [Optional - Coregistration of Corrected-Mask to PET Space: `Coreg_Corrected_RR_to_PET.sh`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#fix_cerebellum_suitm-block-iv-coreg-of-corrected-mask-to-pet-space)
+	- [Optional - Coregistration of Corrected-Mask to PET Space: `Coreg_Corrected_RR_to_PET.sh`](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#fix_cerebellum_suitm-block-iv-derive-corrected-mask)
 
 ***
 
