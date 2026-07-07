@@ -1,4 +1,4 @@
-# Amyloid-PET Reference Region Rescue Pipeline
+### Amyloid-PET Reference Region Rescue Pipeline
 
 - **How we derive our reference region**: The whole cerebellum is designated as the reference region (RR) for [18F] Florbetaben (FBB) amyloid-PET processing. Generation of this RR is performed by thresholding the Desikan Killany atlas using Freesurfer defined labels corresponding to bilateral cerebellar gray and white matter. 
 - **Problems -- Segmentation Errors**: At times, the FBB RR may encroach into the tentorium, the falx cerebri, or the lateral meninges, allowing for off-target binding to contaminate the estimated signal. 
@@ -10,10 +10,10 @@
 
 ***
 
-# Testing Summary:
+### Testing Summary:
 - To ensure this correction method would not systematically alter the signal from the reference region in participants who had the correction applied compared with those who didn’t, we ran the pipeline on a set of 100 subjects who had originally passed reference region quality control. Post-correction, the global standardized uptake value ratio (SUVR) was highly correlated with the original SUVR (R² = 0.99), with a mean change of 0.01 (0.90%). 
 - To visualize the correction, we applied this method to a sample of 100 previously-failed participants and computed the difference between their original and corrected masks. A group-level map showed that the correction primarily eliminated oversegmentation around the lateral meninges.
 
-![](https://github.com/user-attachments/assets/93a20431-aeb8-4aab-8f91-be45348dd167)
+![](https://github.com/user-attachments/assets/5cb8c03a-8718-48f2-8b84-9ea2738ab789)
 
 ***
