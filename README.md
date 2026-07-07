@@ -14,6 +14,6 @@
 - To ensure this correction method would not systematically alter the signal from the reference region in participants who had the correction applied compared with those who didn’t, we ran the pipeline on a set of 100 subjects who had originally passed reference region quality control. Post-correction, the global standardized uptake value ratio (SUVR) was highly correlated with the original SUVR (R² = 0.99), with a mean change of 0.01 (0.90%). 
 - To visualize the correction, we applied this method to a sample of 100 previously-failed participants and computed the difference between their original and corrected masks. A group-level map showed that the correction primarily eliminated oversegmentation around the lateral meninges.
 
-![](https://github.com/user-attachments/assets/eedc0a4c-f250-4e26-83be-a13052d4e1bf)
+![](https://github.com/user-attachments/assets/93a20431-aeb8-4aab-8f91-be45348dd167)
 
 ***
