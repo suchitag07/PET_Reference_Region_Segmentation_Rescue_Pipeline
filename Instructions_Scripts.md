@@ -667,7 +667,7 @@ fi
 ``` 
 - On registering the corrected mask to PET space, you should be able to overlay the pre/post-correction masks and visualize the difference.
 
-![](https://github.com/user-attachments/assets/27b09dbc-a798-4645-8ce7-314db2432b1e)
+![](https://github.com/user-attachments/assets/e4879343-31fe-4137-a999-95c58169a17e)
 	
 
 ***
