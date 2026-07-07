@@ -1,8 +1,5 @@
 ### Amyloid-PET Reference Region Rescue Pipeline
 
-- As described in:
-- Ganesan S., Lee N, Hand M, Tennant V, Braskie MN. HABS-HD Reference Region Rescue Pipeline - [18F] Florbetaben (FBB) Amyloid PET for HABS-HD. Revised 4/08/26. Accessible via the Laboratory of Neuro Imaging (LONI) Imaging Data Archive: https://ida.loni.usc.edu
-
 - **How we derive our reference region**: The whole cerebellum is designated as the reference region (RR) for [18F] Florbetaben (FBB) amyloid-PET processing. Generation of this RR is performed by thresholding the Desikan Killany atlas using Freesurfer defined labels corresponding to bilateral cerebellar gray and white matter. 
 - **Problems -- Segmentation Errors**: At times, the FBB RR may encroach into the tentorium, the falx cerebri, or the lateral meninges, allowing for off-target binding to contaminate the estimated signal. 
 - **Fix**: Here, we describe a protocol that utilizes the SUIT  toolbox and template (spatially unbiased atlas template of the cerebellum and brainstem; http://www.diedrichsenlab.org/imaging/suit.htm)  to automatically correct for oversegmentation of the RR mask generated through FreeSurfer. 
@@ -18,5 +15,7 @@
 - To visualize the correction, we applied this method to a sample of 100 previously-failed participants and computed the difference between their original and corrected masks. A group-level map showed that the correction primarily eliminated oversegmentation around the lateral meninges.
 
 ![](https://github.com/user-attachments/assets/5cb8c03a-8718-48f2-8b84-9ea2738ab789)
+
+Cite as: Ganesan S., Lee N, Hand M, Tennant V, Braskie MN. HABS-HD Reference Region Rescue Pipeline - [18F] Florbetaben (FBB) Amyloid PET for HABS-HD. Revised 4/08/26. Accessible via the Laboratory of Neuro Imaging (LONI) Imaging Data Archive: https://ida.loni.usc.edu
 
 ***
