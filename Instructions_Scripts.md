@@ -1,6 +1,6 @@
-# Amyloid-PET Reference Region Rescue Pipeline
+## Amyloid-PET Reference Region Rescue Pipeline
 
-# Scripts and Dependencies
+### Scripts and Dependencies
 - This doc will systematically go over the scripts/code used to implement this correction method.
 
 ### Software:
@@ -13,7 +13,7 @@
 
 ### Scripts
 - After you install all dependencies, you should be ready to run the following scripts:
-    - [Main Master Script: Run_RR_Correction_Pipeline.sh](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#master-script-run_rr_correction_pipelinesh)
+    - [Main Master Script: Run_RR_Correction_Pipeline.sh](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#master-script-run_rr_correction_pipelinesh)
 	- [Subscript 1: ACPC Alignment Script: `SUIT_Prep.sh`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#suit_prepsh--acpc-alignment-script)
 	- [Subscript 2: Fix-Cerebellum_SUIT Matlab Function: `Fix_Cerebellum_SUIT.m`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#fix_cerebellum_suitm-function)
 	- [Subscript 3: Mask Dilation Script: `binary_dilation.py`](https://gist.github.com/suchitag07/2a4274e9d055a90580b7fd57e0369927#iiid--targeted-dilation-using-suit-subregions)
