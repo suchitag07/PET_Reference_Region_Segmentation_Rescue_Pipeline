@@ -6,6 +6,10 @@ MPRAGE="$3"
 Repo_path="$4"
 antspath="$5"
 
+# Resolve and validate the MNI template (see Templates.md)
+MNI_TEMPLATE="${Repo_path}/Templates/mni_icbm152_t1_tal_nlin_asym_09c.nii"
+[ -s "${MNI_TEMPLATE}" ] || { echo "ERROR: MNI template missing at ${MNI_TEMPLATE} — see Templates.md" >&2; exit 1; }
+
 # Copy over the matching T1 image
 mkdir -p "${DIROUT}/${subj}"
 SUIT_DIR="${DIROUT}/${subj}/SUIT_Derivatives"
