@@ -71,12 +71,24 @@ function Fix_Cerebellum_SUIT(Repo_path, spm12_path, antspath, fslpath, pyExe, su
     SUIT_mask = fullfile(suitDerivativesPath, 'maskSUIT.nii');
     SUIT_atlas = fullfile(suitDerivativesPath, 'Cerebellum-SUIT.nii');
     
-    if ~exist(SUIT_mask, 'file')
-        copyfile(fullfile(templatesPath, "maskSUIT.nii"), suitDerivativesPath);
+    if exist(fullfile(templatesPath, "maskSUIT.nii"), 'file')
+        if ~exist(SUIT_mask, 'file')
+            copyfile(fullfile(templatesPath, "maskSUIT.nii"), suitDerivativesPath);
+        end
+    else
+        fprintf('maskSUIT.nii not found - see Templates.md \n');
+        diary off;
+        return;  % Exit the function if the template is missing
     end
-    
-    if ~exist(SUIT_atlas, 'file')
-        copyfile(fullfile(atlasPath, "Cerebellum-SUIT.nii"), suitDerivativesPath);
+
+    if exist(fullfile(atlasPath, "Cerebellum-SUIT.nii"), 'file')
+        if ~exist(SUIT_atlas, 'file')
+            copyfile(fullfile(atlasPath, "Cerebellum-SUIT.nii"), suitDerivativesPath);
+        end
+    else
+        fprintf('Cerebellum-SUIT.nii not found - see Templates.md \n');
+        diary off;
+        return;  % Exit the function if the atlas is missing
     end
     
     
