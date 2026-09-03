@@ -11,6 +11,9 @@
 - Advanced Normalization Tools (ANTs)
 - Python version 3.9 with SciPy: 1.10
 
+### Templates
+- Download the SUIT and MNI templates as specified in the documentation and store them inside a separate Templates directory (`SUIT_Prep.sh` relies on this).
+
 ### Scripts
 - After you install all dependencies, you should be ready to run the following scripts:
     - [Main Master Script: Run_RR_Correction_Pipeline.sh](https://github.com/suchitag07/PET_Reference_Region_Segmentation_Rescue_Pipeline/blob/main/Instructions_Scripts.md#master-script-run_rr_correction_pipelinesh)
