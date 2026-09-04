@@ -47,20 +47,4 @@ Cite:
 
 ## Where to put them
 
-Create a `Templates/` directory at the repo root and place
-both files inside it:
-
-```
-Scripts
-Templates
-  ├── mni_icbm152_t1_tal_nlin_asym_09c.nii
-  └── (SUIT files are read from spm12/toolbox/suit/)
-```
-
-`SUIT_Prep.sh` resolves this path from the `Repo_path`
-argument, so no additional configuration is needed.
-
-| Variable | Points to |
-|---|---|
-| `Repo_path` | This repository, containing `Templates/` |
-| `spm12_path` | Your SPM12 install, with `toolbox/suit/` present |
+Create a `Templates/` directory at the repo root and place the MNI template inside it. The `SUIT_Prep.sh` script will fetch the template from this directory and utilize it to run ANTS registration (bring the subject T1 to MNI/ACPC aligned space - which is required before `Fix_Cerebellum_SUIT` can run.) 
