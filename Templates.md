@@ -50,9 +50,12 @@ Cite:
 Create a `Templates/` directory at the repo root and place
 both files inside it:
 
-Templates/
-├── mni_icbm152_t1_tal_nlin_asym_09c.nii
-└── (SUIT files are read from spm12/toolbox/suit/)
+```
+Scripts
+Templates
+  ├── mni_icbm152_t1_tal_nlin_asym_09c.nii
+  └── (SUIT files are read from spm12/toolbox/suit/)
+```
 
 `SUIT_Prep.sh` resolves this path from the `Repo_path`
 argument, so no additional configuration is needed.
