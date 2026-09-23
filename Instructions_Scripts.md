@@ -37,7 +37,7 @@
 
 ***
 
-### Developer's Section
+## Developer's Section
 
 ## `SUIT_Prep.sh`:  ACPC Alignment Script					
 
