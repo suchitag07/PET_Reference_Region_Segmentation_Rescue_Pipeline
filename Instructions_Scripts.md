@@ -37,6 +37,8 @@
 
 ***
 
+### Developer's Section
+
 ## `SUIT_Prep.sh`:  ACPC Alignment Script					
 
 This script performs rigid and nonlinear registration of each subject’s native T1 MRI image to the MNI-ICBM152 anatomical template using ANTs. The process involves two steps: registering the native image and applying the transformations to create an ACPC-aligned T1 image that is ready for use with the SUIT toolbox.
